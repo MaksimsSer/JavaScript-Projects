@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <h1 id="demo">My first car was Audi</h1>
+    <script> document.getElementById("demo").style.color = "red";</script>
+
+    <p id="multi"></p>
+    <script>
+    function myFunction(p1, p2) {
+        return p1*p2;
+    }
+    document.getElementById("multi").innerHTML = myFunction (5,6);
+    </script>
+
+    <p id="Addition" onclick ="addition_Function()">Addition</p>
+    <p id="Subtr" onclick ="subtraction_Function()">Subtraction</p>
+    <p id="DDD" onclick ="multiplication_Function()">Multiplication</p>
+    <p id="Division" onclick="division_Function()">Division</p>
+    <p id="Mixed" onclick="mixed_Math()">Mixed</p>
+    <p id="Modul" onclick="modulus_Opertor()">Modulus</p>
+    <p id="Unary" onclick="negation_Operator()">Unary</p>
+
+    <script>
+        var x= 5;
+        x++;
+        document.write(x);
+    </script>
+
+    <script>
+        var x= 5.25;
+        x--;
+        document.write(x);
+    </script>
+
+    
+
+</body>
+</html>

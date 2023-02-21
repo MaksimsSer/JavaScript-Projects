@@ -10,3 +10,4 @@ function myFunction() { // Definding a function and naming it
     sentence += "a lot from this book!"; // operator to concatenate a string
     document.getElementById("Concatenate").innerHTML = sentence; // Putting the value//of result into HTML with "Concatenate" id
 }
+
