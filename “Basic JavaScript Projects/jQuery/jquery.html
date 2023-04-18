@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+     <!-- link allowed use jquery  -->
+    <title>Document</title>
+</head>
+
+    <script>
+    $(document).ready(function(){ 
+    // documents ready function
+        $("html").append( 
+            // $ denotes a function/selector/ready function (action)
+            "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragrpah 3</p>\
+                    </div>\
+                </div>\
+            </body>"
+         );
+        $("#1").css({"color":"red"}); // css method 
+        $("#2").click(function(){  //click function
+            $('h1').hide(); // when clicking on paragraph 2 h1 "Basic jquery hide"
+        });
+
+            $( "#3" ).click(function() { //click function
+         console.log( "You clicked a paragraph!" ); // console log
+        });
+
+    });
+    </script>
+
+
+</html>
